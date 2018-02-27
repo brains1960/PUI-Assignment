@@ -1,0 +1,144 @@
+body {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: cambria;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+h1,h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+}
+
+nav img {
+    width: 120px;
+}
+
+.clear {
+    clear: both;
+}
+
+#home {
+    background-image: url(img/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home button {
+    background: #c0c0c0;
+    padding: 15px;
+    border: 1px solid #c0c0c0;
+    color: white;
+}
+#home-text {
+    margin-top: 10em;
+}
+
+#nav-left{
+    float: left;
+    width: 35%;
+}
+
+#nav-right {
+    float: right;
+    width: 35%;
+    color: #F2D7B1;
+}
+
+#home #nav-right {
+    color: white;
+}
+
+#nav-right li, #nav-left li {
+    padding: 0 2em 0 2em;
+}
+
+#product-left {
+    position: absolute;
+    top: 0;
+    height: 120%;
+    width: 45%;
+    left: 0;
+    background-color: #F2D7B1;
+    z-index: -999;
+    overflow: hidden;
+}
+
+
+#product-left div {
+    margin-top: 150px;
+}
+
+#famous-img {
+    width: 400px;
+    height: auto;
+    margin-left: 550px;
+    margin-top: -25px;
+}
+
+#other-buns {
+    border: 2px dashed black;
+    color: black;
+    text-shadow: none;
+    width: 95%;
+    margin-left: 25px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+#other-buns img {
+    width: 200px;
+    height: auto;
+    margin: 0 2em 0 2em;
+    text-align: left;
+}
+
+#famous-page main {
+    margin-left: 75px;
+}
+
+#famous-page main section {
+    float: left;
+}
+
+#famous-page main section img {
+    width: 400px;
+}
+
+#famous-page form {
+    background-color: #F2D7B1;
+    width: 300px;
+    text-align: left;
+    padding: 2em;
+    text-shadow: none;
+}
+
+#famous-page form input {
+    margin-bottom: 20px;
+}
+
+/*#famous-page input {
+    display: block;
+}*/

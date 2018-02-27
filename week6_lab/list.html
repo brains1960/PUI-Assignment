@@ -6,21 +6,23 @@
     	<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="main.js" type="text/javascript"></script>
 	</head>
 	<body>
 		
 		<div id="todo-lists">
 		    <div class="list">
 		        <h2 class="list-title">Groceries</h2>
-		        <ol>
-		            <li>Eggs</li>
-		            <li>Milk</li>
-		            <li>Cereal</li>
-		        </ol>
+		        <ol id='grocery-list'>
+                    <li><input type="checkbox" class="complete-item">Eggs<button class="delete-item">X</button></li>
+                    <li><input type="checkbox" class="complete-item">Milk<button class="delete-item">X</button></li>
+                    <li><input type="checkbox" class="complete-item">Cereal<button class="delete-item">X</button></li>
+                </ol>
 
 		    </div>
-		    <input type="text" name=""></input>
-		    <button>Add Item</button>
+		    <input type="text" name="" id="new-list-item"></input>
+		    <button id="add-item">Add Item</button>
 		</div>
 
 
