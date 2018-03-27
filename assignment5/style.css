@@ -174,7 +174,9 @@ ul#nav-right a{
     display: block;
     margin-bottom: 100px;
 }
-
+#cart h3 {
+    text-align: left;
+}
 #cart img {
     margin-right: 100px;
     width: 200px;
