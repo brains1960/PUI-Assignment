@@ -3,8 +3,7 @@ body {
     color: white;
     text-align: center;
     font-family: cambria;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 
 h1,h3 {
@@ -37,25 +36,14 @@ nav img {
     width: 120px;
 }
 
+/* Classes */
 .clear {
     clear: both;
 }
 
-#home {
-    background-image: url(img/home-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* IDs */
 
-#home button {
-    background: #c0c0c0;
-    padding: 15px;
-    border: 1px solid #c0c0c0;
-    color: white;
-}
-#home-text {
-    margin-top: 10em;
-}
+/* Navigation */
 
 #nav-left{
     float: left;
@@ -73,14 +61,36 @@ ul#nav-right a{
     text-decoration: none;
 }
 
+#nav-right li, #nav-left li {
+    padding: 0 1.5em 0 1.5em;
+}
+/* Home Page */
+#home {
+    background-image: url(img/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home button {
+    background: #c0c0c0;
+    padding: 15px;
+    border: 1px solid #c0c0c0;
+    color: white;
+}
+#home-text {
+    margin-top: 10em;
+}
+
 #home #nav-right {
     color: white;
 }
 
-#nav-right li, #nav-left li {
-    padding: 0 1.5em 0 1.5em;
+/* Setting Colour for other pages */
+#products nav, #famous-page nav, #product-page nav, #cart, #products main section h3  {
+    color: #F2D7B1;
 }
 
+/* Product Page */
 #product-left {
     position: absolute;
     top: 0;
@@ -161,6 +171,7 @@ ul#nav-right a{
     margin: 20px 0 20px 0;
 }
 
+/* Cart Notfication */
 #itemno {
     border-radius: 50%;
     padding: 0.5em 0.75em 0.5em 0.75em;
@@ -169,6 +180,7 @@ ul#nav-right a{
     font-size: 0.7em;
 }
 
+/* Cart Page */
 #cart {
     text-align: left;
     display: block;

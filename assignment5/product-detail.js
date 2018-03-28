@@ -54,6 +54,7 @@ $(document).ready(function() {
     //adding buns to the cart
     $("#add2cart").click(function() {
         
+        //No glazed buns
         var glazing = $("#glazing").val();
         var quantity = parseInt($("#quantity").val());
         
@@ -65,6 +66,7 @@ $(document).ready(function() {
             }
         }
         
+        //Sugar Milk
         else if(glazing == "sm") {
             if(JSON.parse(localStorage.getItem("sm")) == null) {
                 localStorage.setItem("sm", JSON.stringify(quantity));
@@ -73,6 +75,7 @@ $(document).ready(function() {
             }
         }
         
+        //Vanilla Milk
         else if(glazing == "vm") {
             if(JSON.parse(localStorage.getItem("vm")) == null) {
                 localStorage.setItem("vm", JSON.stringify(quantity));
@@ -81,6 +84,7 @@ $(document).ready(function() {
             }
         }
         
+        //Double Chocolate
         else if(glazing == "choc") {
             if(JSON.parse(localStorage.getItem("choc")) == null) {
                 localStorage.setItem("choc", JSON.stringify(quantity));
@@ -89,6 +93,7 @@ $(document).ready(function() {
             }
         }
         
+        //If there is nothing in the cart to start with then add the border to show the number
         if($("#itemno").text() == " ") {
             $("#itemno").text(String(quantity));
             $("#itemno").css("border", "1px solid black");
@@ -104,11 +109,13 @@ $(document).ready(function() {
     
     //check that a none bun has been added to the cart
     if(none > 0) {
+        
+        //creating none bun cart item
         var noneItem = document.createElement('li');
         var noneImg = document.createElement("img");
         noneImg.setAttribute("src", "img/original.png");
 
-        var noneHeader = document.createElement("h3");
+        var noneHeader = document.createElement("h4");
         noneHeader.appendChild(document.createTextNode("Original Bun"));
         
         var noneQuantity = document.createElement("p");
@@ -135,12 +142,13 @@ $(document).ready(function() {
         cart.appendChild(noneItem);
     }
     
+    //suagr Milk bun cart item
     if(sm > 0) {
         var smItem = document.createElement('li');
         var smImg = document.createElement("img");
         smImg.setAttribute("src", "img/sugarmilk.png");
 
-        var smHeader = document.createElement("h3");
+        var smHeader = document.createElement("h4");
         smHeader.appendChild(document.createTextNode("Original Bun"));
 
         var smQuantity = document.createElement("p");
@@ -167,12 +175,13 @@ $(document).ready(function() {
         cart.appendChild(smItem);
     }
     
+    //vanilla milk cart item    
     if(vm > 0) {
         var vmItem = document.createElement('li');
         var vmImg = document.createElement("img");
         vmImg.setAttribute("src", "img/vanillamilk.png");
 
-        var vmHeader = document.createElement("h3");
+        var vmHeader = document.createElement("h4");
         vmHeader.appendChild(document.createTextNode("Original Bun"));
 
         var vmQuantity = document.createElement("p");
@@ -204,7 +213,7 @@ $(document).ready(function() {
         var chocImg = document.createElement("img");
         chocImg.setAttribute("src", "img/doublechoc.png");
 
-        var chocHeader = document.createElement("h3");
+        var chocHeader = document.createElement("h4");
         chocHeader.appendChild(document.createTextNode("Original Bun"));
 
         var chocQuantity = document.createElement("p");
@@ -233,6 +242,9 @@ $(document).ready(function() {
 
 });
     
+//Functions to remove items based on their button
+//(isNaN(none = parseInt(JSON.parse(localStorage.getItem("none")))) ? 0 : none) checks if the current value returns NAN, if it does set it to 0
+
 $(document).on("click", "#removeNone", function() {
     $(this).parent().parent().parent().remove();
     var noneQuant = (isNaN(none = parseInt(JSON.parse(localStorage.getItem("none")))) ? 0 : none);

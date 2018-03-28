@@ -2,10 +2,10 @@
 <html>
     
     <head>
-        <title></title>
+        <title>Cart</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="application/javascript" src="product-detail.js"></script>
+        <script src="product-detail.js"></script>
     </head>
 
     <body id="products">
@@ -15,9 +15,9 @@
                 <li>Catering</li>
                 <li>Gallery</li>
             </ul>
-            <a href="index.html"> <img src="img/logo.png"/></a>
+            <a href="index.html"> <img src="img/logo.png" alt="BBB Shop Logo"/></a>
             <ul id="nav-right">
-                <a href="products.html"><li>Menu</li></a>
+                <li><a href="products.html">Menu</a></li>
                 <li>About</li>
                 <li>Contact</li>
                 <li><a href="cart.html">Cart<p id="itemno"> </p></a></li>
@@ -25,7 +25,9 @@
             <div class="clear"></div>
         </nav>
         <main>
+            <!--- Will hold items in cart dynamically made wwith js -->
             <section>
+                <h3>Your Cart</h3>
                 <ul id="cart">
 <!--
                     <li>
@@ -44,19 +46,19 @@
                 <p>Other buns to try</p>
                 <ul>
                     <li>
-                        <img src="img/caramel-pecan.png"/>
+                        <img src="img/caramel-pecan.png" alt="Caramel Pecan Bun"/>
                         <p>Caramel Pecan</p>
                     </li>
                     <li>
-                        <img src="img/walnut.jpg" />
+                        <img src="img/walnut.jpg" alt="Walnut Bun"/>
                         <p>Walnut</p>
                     </li>
                     <li>
-                        <a href="blackberry-bun.html"><img src="img/blackberry.jpg"/></a>
+                        <a href="blackberry-bun.html"><img src="img/blackberry.jpg" alt="Blackberry Bun"/></a>
                         <p>Blackberry</p>
                     </li>
                     <li>
-                        <img src="img/pumpkin-spice.jpg" />
+                        <img src="img/pumpkin-spice.jpg" alt="Pumpkin Spice Bun" />
                         <p>Pumpkin Spice</p>
                     </li>
                     
