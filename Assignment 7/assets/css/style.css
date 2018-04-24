@@ -366,35 +366,6 @@ color: green;
     max-width:580px;
 }
 
-.brand-promotion {
-    top:650px;
-    left: 0;
-    position: absolute;
-    right: 15px;
-    color:#fff;
-    z-index:999999;
-}
-
-.brand-content {
-    background-color:rgba(217, 151, 35, 0.85);
-    padding: 30px 32px;
-    font-size: 14px;
-    margin-right: -25px;
-}
-
-.brand-content h2 {
-    text-transform: capitalize;
-}
-
-.brand-content:hover {
-    background-color:rgba(109, 75, 16, 0.85);
-}
-
-.brand-content img {
-    margin-right: 15px;
-    margin-top: 15px;
-}
-
 .container>.carousel-arrows {
     top: 515px;
     left:0;
